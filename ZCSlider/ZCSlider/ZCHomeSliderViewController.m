@@ -124,6 +124,7 @@
     }
     _headerScrollView.contentSize = CGSizeMake(kScreenSizeWidth/4 * name.count, 0);
 }
+//并没有用到
 - (void)leftBtnClick:(UIBarButtonItem *)bar
 {
     NSLog(@"设置");
