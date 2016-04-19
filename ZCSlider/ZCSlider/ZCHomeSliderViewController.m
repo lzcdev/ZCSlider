@@ -12,17 +12,18 @@
 #import "ZCRecomendViewController.h"
 #import "ZCKBViewController.h"
 #import "ZCYSViewController.h"
+
 @interface ZCHomeSliderViewController ()<UIScrollViewDelegate>
 
-@property (nonatomic ,strong) ZCNearViewController *nearVC;
-@property (nonatomic ,strong) ZCSquareViewController *squareVC;
-@property (nonatomic ,strong) ZCRecomendViewController *recommendVC;
-@property (nonatomic ,strong) ZCKBViewController *kbVC;
-@property (nonatomic ,strong) ZCYSViewController *ysVC;
-@property (nonatomic ,strong) UIScrollView *mainScrollView;
-@property (nonatomic ,strong) UIButton *slideBtn;
-@property (nonatomic ,strong) UILabel *slideLab;
-@property (nonatomic,strong) UIScrollView *headerScrollView;
+@property (nonatomic, strong) ZCNearViewController *nearVC;
+@property (nonatomic, strong) ZCSquareViewController *squareVC;
+@property (nonatomic, strong) ZCRecomendViewController *recommendVC;
+@property (nonatomic, strong) ZCKBViewController *kbVC;
+@property (nonatomic, strong) ZCYSViewController *ysVC;
+@property (nonatomic, strong) UIScrollView *mainScrollView;
+@property (nonatomic, strong) UIButton *slideBtn;
+@property (nonatomic, strong) UILabel *slideLab;
+@property (nonatomic, strong) UIScrollView *headerScrollView;
 @end
 
 @implementation ZCHomeSliderViewController
@@ -110,7 +111,7 @@
     [_headerScrollView addSubview:_slideLab];
     
     //导航上滚动条上按钮
-    NSArray *name = @[@"附近",@"广场",@"推荐",@"科比",@"勇士"];
+    NSArray *name = @[@"附近", @"广场", @"推荐", @"科比", @"勇士"];
     for (int i = 0; i < name.count; i++) {
         _slideBtn = [UIButton buttonWithType:UIButtonTypeSystem];
         _slideBtn.frame = CGRectMake(0+kScreenSizeWidth/4*i, 0, kScreenSizeWidth/4, _headerScrollView.frame.size.height);

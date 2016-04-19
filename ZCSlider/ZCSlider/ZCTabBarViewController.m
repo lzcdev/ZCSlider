@@ -11,6 +11,7 @@
 #import "ZCMessageViewController.h"
 #import "ZCMeViewController.h"
 #import "UIColor+FlatUI.h"
+
 @interface ZCTabBarViewController ()
 
 @end
@@ -23,7 +24,6 @@
     
     [self initChildController];
 }
-
 /**
  *  初始化子控制器
  */
